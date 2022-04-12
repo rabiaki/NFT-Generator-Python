@@ -57,10 +57,10 @@ def nftGenerator(main_address, count):
         for color in colorList:
             name = "nft" + str(k)
 
-            with open(main_address +"/results/"+ name + '.json', 'w') as f:
+            with open("/home/maryam/Documents/vscode/NFT_Marketplace/src/frontend/components/results/"+ name + '.json', 'w') as f:
                 color_img = Image.open(colorAddress + "/" + color)
 
-                imageName = main_address + "/results/"  + name + ".png"
+                imageName = "/home/maryam/Documents/vscode/NFT_Marketplace/src/frontend/components/results/"  + name + ".png"
                 img = Image.new("RGBA", im_base.size)
 
                 img.paste(color_img, (0,0), color_img)
@@ -82,7 +82,7 @@ def nftGenerator(main_address, count):
 
                 imgaeDict = {}
                 imgaeDict['name'] = name
-                imgaeDict['address'] = imageName
+                imgaeDict['address'] = "http://127.0.0.1:5000/imgs/" + name
                 all_images.append(imgaeDict)
     
     #return json.dumps({'items': all_images})

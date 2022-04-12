@@ -1,0 +1,25 @@
+{
+    "image": "nft6.png",
+    "name": "name",
+    "description": "description",
+    "external_url": "",
+    "seller_fee_basis_points": 0,
+    "properties": {
+        "files": [
+            {
+                "uri": "/home/maryam/Documents/vscode/NFT-Generator-Python/images/results/nft6.png",
+                "type": "image/png"
+            }
+        ]
+    },
+    "attributes": [
+        {
+            "trait_type": "background",
+            "value": "blue"
+        },
+        {
+            "trait_type": "asset",
+            "value": "glasses"
+        }
+    ]
+}
